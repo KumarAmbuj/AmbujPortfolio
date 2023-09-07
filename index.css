@@ -1,0 +1,323 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.logo{
+    height:30px;
+    width: 30px;
+}
+.homePageParent{
+    height: 90vh;
+    width:99.7vw;
+    border:1px solid black;
+    display: flex;
+    background-image: url('./images/hompagebackground.gif');
+    
+
+}
+.homePageChild1{
+    height:100%;
+    flex:2;
+    /*border:1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5% 1%;
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+.homePageChild2{
+    height:100%;
+    flex:3;
+     /*border:1px solid red;*/
+}
+.homePageChild3{
+    height:100%;
+    flex:2;
+     /*border:1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2% 1%;
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.homePageChild11{
+    width:90%;
+    height:14%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:2%;
+    
+}
+
+.homePageChild12{
+    width:90%;
+    height:14%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+   
+}
+
+.homePageChild31{
+    width:90%;
+    height:14%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:2%;
+}
+
+.homePageChild32{
+    width:90%;
+    height:14%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+}
+.homePageName{
+    width:60%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron';
+    font-size: 1.7rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    margin:2% auto;
+    /*outline: 1px solid red;*/
+    
+
+}
+.homePageImage{
+    width: 100%;
+    height: 40%;
+}
+.homePageImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.homePageWebDeveloper{
+    width:60%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron';
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    margin:2% auto;
+   /*outline: 1px solid red;*/
+}
+.homePageIcon{
+    width:40%;
+    height: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Orbitron';
+    
+   
+    background-color: black;
+    color: white;
+    margin:2% auto;
+    /*outline: 1px solid red;*/
+}
+.fa{
+    color:white;
+    font-size: 20px;
+}
+
+
+
+  /* about me*/
+
+  .aboutMe{
+    display:flex;
+    height: 90vh;
+    
+    /* outline: 1px solid red;*/
+    background-image: url('./images/aboutme.gif');
+
+  }
+  .aboutMeChild1{
+    flex:1;
+    /* outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutMeChild2{
+    flex:3;
+   /* outline: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutMeChild3{
+    flex:1;
+   /* outline: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .aboutMeChild21{
+    width:90%;
+    min-height: 55%;
+    margin:auto;
+   background-image: url('./images/screen2.webp');
+    background-size: cover;
+    font-family: 'Orbitron';
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    padding: 5% 5%;
+    object-fit: contain;
+
+  }
+  .aboutMeChild21 img{
+    width:100%;
+    height:100%;
+  }
+.aboutMeChild22{
+    width:40%;
+    height:18%;
+    margin: auto;
+   /* outline: 1px solid red;*/
+    margin-bottom: 10%;
+}
+.aboutMeChild22 img{
+    height:100%;
+    width:100%;
+    
+}
+.aboutMeChild11{
+    height: 40%;
+    width:70%;
+}
+.aboutMeChild11 img{
+    height: 100%;
+    width: 100%;
+}
+
+.aboutMeChild31{
+    height: 40%;
+    width:70%;
+}
+.aboutMeChild31 img{
+    height: 100%;
+    width: 100%;
+}
+.resume{
+    margin-top: 2%;
+    padding:2%;
+}
+.resumeBtn{
+    font-family: 'Orbitron';
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    border: none;
+
+}
+
+.aboutMeMainText{
+    text-align: center;
+    font-family: 'Orbitron';
+    font-size: 1.9rem;
+    font-weight: 650;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+}
+  /* about me*/
+
+
+  @media only screen and (max-width: 500px) {
+    .homePageName{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .homePageWebDeveloper{
+        font-size: 1rem;
+        font-weight: 450;
+    }
+    .homePageChild1{
+        display: none;
+    }
+    .homePageChild3{
+        display: none;
+    }
+    .aboutMe{
+        flex-direction: column;
+    }
+    .aboutMeChild21{
+       
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+    .aboutMeChild1{
+        height:25%;
+    }
+    .aboutMeChild3{
+        height: auto;
+    }
+    .aboutMeChild11{
+        height: 90%;
+        width: 40%;
+    }
+
+    .aboutMeChild31{
+        height: 65%;
+        width: 40%;
+    }
+    .aboutMeChild22{
+       
+        margin-bottom: 8%;
+    }
+    
+    
+  }
