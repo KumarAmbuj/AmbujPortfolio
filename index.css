@@ -275,6 +275,83 @@ body{
 }
   /* about me*/
 
+   /* skills*/
+  
+   .skills{
+   
+    display:flex;
+    height: 90vh;
+    width:98vw;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    /*outline: 1px solid red;*/
+    background-image: url('./images/hompagebackground.gif');
+    position: relative;
+    
+    
+    
+
+  }
+.skillsHeading{
+    padding-top: 1%;
+}
+.skillsMiddleImage{
+    height:30%;
+    width:25%;
+    /*outline: 1px solid red;*/
+    position: relative;
+}
+.skillsMiddleImage img{
+    height:100%;
+    width: 100%;
+}
+.skillMiddleText{
+    padding: 3%;
+    font-family: 'Orbitron';
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    top: 37%;
+    left: 25%;
+    position: absolute;
+    
+    /*outline: 1px solid red;*/
+    
+}
+
+.skillIcon{
+    position: absolute;
+    left:5%;
+    bottom: 4%;
+    height:20%;
+    width: 8%;
+    /*outline: 1px solid red;*/
+}
+.skillIconImage{
+    width:97%;
+    height:75%;
+    /*outline: 1px solid red;*/
+    margin: auto;
+}
+.skillIconImage img{
+    width:100%;
+    height: 99%;
+}
+.skillIconProgressBar{
+    margin: 4% auto;
+    width:95%;
+    height:24%;
+}
+/* skills*/
+
+  
+
+
+
+
 
   @media only screen and (max-width: 500px) {
     .homePageName{
@@ -300,24 +377,60 @@ body{
         font-weight: 400;
     }
     .aboutMeChild1{
-        height:25%;
+        height:20%;
     }
     .aboutMeChild3{
         height: auto;
     }
     .aboutMeChild11{
         height: 90%;
-        width: 40%;
+        width: 30%;
     }
-
+    .aboutMeChild{
+        height:auto;
+    }
     .aboutMeChild31{
         height: 65%;
-        width: 40%;
+        width: 30%;
     }
     .aboutMeChild22{
        
         margin-bottom: 8%;
     }
-    
-    
+    .aboutMeChild3{
+        height:20%;
+    }
+    .skillsMiddleImage{
+        height:20%;
+        width:55%;
+        
+        position: relative;
+    }
+    .skillsMiddleImage img{
+        height:100%;
+        width: 100%;
+    }
+    .skillMiddleText{
+        padding: 3%;
+        font-family: 'Orbitron';
+        font-size: 0.76rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        background-color: black;
+        color: white;
+        top: 37%;
+        left: 40%;
+        position: absolute;
+       
+        
+    }
+
+    .skillIcon{
+        position: absolute;
+        left:5%;
+        bottom: 4%;
+        height:13%;
+        width: 20%;
+        /*outline: 1px solid red;*/
+    }
   }

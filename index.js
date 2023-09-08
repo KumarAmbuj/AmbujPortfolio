@@ -56,7 +56,7 @@ function printName() {
   }, 200);
 }
 
-printName();
+//printName();
 
 //up and down
 
@@ -159,7 +159,7 @@ function upAndDown() {
     }
   }, 100);
 }
-upAndDown();
+//upAndDown();
 
 // about me text printing
 
@@ -192,4 +192,153 @@ function printAboutMeText() {
     }
   }, 50);
 }
-printAboutMeText();
+//printAboutMeText();
+
+//
+//skill middle text
+
+function printMiddleText() {
+  let arr = [
+    "Front End Skills 90%",
+    "Back End Skills 70%",
+    "Coding Skills 95%",
+    "Tools 70%",
+    "Database 70%",
+    "Data Structure 95%",
+    "Algorithm 95%",
+    "Javascript 90%",
+    "Python 90%",
+    "Core Java 85%",
+    "HTML 5 80%",
+    "CSS 3 75%",
+    "Oops Concept 70%",
+    "Django 65%",
+    "MySql 70%",
+    "Matplotlib 50%",
+    "Git 60%",
+    "Github 70%",
+    "Numpy 50%",
+    "Pandas 50%",
+  ];
+  let midText = document.getElementById("skillMiddleText");
+  midText.textContent = "";
+  let i = -1;
+  let j = 0;
+  let s = arr[j];
+  let n = arr.length;
+  let id = setInterval(() => {
+    i++;
+    let ns = s.slice(0, i + 1).toUpperCase();
+    midText.textContent = ns;
+
+    if (i == n - 1) {
+      setTimeout(() => {
+        j = (j + 1) % n;
+        s = arr[j];
+        i = -1;
+      }, 600);
+    }
+  }, 120);
+}
+
+printMiddleText();
+
+function moveSkillIcon(icon) {
+  let l = 5;
+  let b = 4;
+  icon.style.left.left = l + "%";
+  icon.style.bottom = b + "%";
+  let dir = "up";
+  icon.style.display = "block";
+  let id = setInterval(() => {
+    if (dir === "up") {
+      b += 0.2;
+      icon.style.bottom = b + "%";
+      if (b > 73) {
+        dir = "right";
+      }
+    } else if (dir === "right") {
+      l += 0.1;
+      icon.style.left = l + "%";
+      if (l > 80) {
+        dir = "down";
+      }
+    } else if (dir == "down") {
+      b -= 0.2;
+      icon.style.bottom = b + "%";
+      if (b < 5) {
+        dir = "left";
+      }
+    } else if (dir == "left") {
+      l -= 0.1;
+      icon.style.left = l + "%";
+      if (l < 5) {
+        dir = "up";
+      }
+    }
+  }, 19);
+}
+
+//let icon = document.getElementById("html");
+//icon.style.display = "none";
+
+//moveSkillIcon(icon);
+
+function skillicons() {
+  let arr = [];
+  let dsa = document.getElementById("dsa");
+  arr.push(dsa);
+  let python = document.getElementById("python");
+  arr.push(python);
+
+  let java = document.getElementById("java");
+  arr.push(java);
+
+  let javascript = document.getElementById("javascript");
+  arr.push(javascript);
+
+  let react = document.getElementById("react");
+  arr.push(react);
+
+  let html = document.getElementById("html");
+  arr.push(html);
+
+  let css = document.getElementById("css");
+  arr.push(css);
+
+  let django = document.getElementById("django");
+  arr.push(django);
+
+  let mysql = document.getElementById("mysql");
+  arr.push(mysql);
+
+  let matplotlib = document.getElementById("matplotlib");
+  arr.push(matplotlib);
+
+  let git = document.getElementById("git");
+  arr.push(git);
+
+  let github = document.getElementById("github");
+  arr.push(github);
+
+  let numpy = document.getElementById("numpy");
+  arr.push(numpy);
+
+  let pandas = document.getElementById("pandas");
+  arr.push(pandas);
+
+  for (let x of arr) {
+    x.style.display = "none";
+  }
+  let i = -1;
+  let id = setInterval(() => {
+    i++;
+    moveSkillIcon(arr[i]);
+    if (i == arr.length - 1) {
+      clearInterval(id);
+    }
+  }, 3000);
+}
+
+// calling skills section
+//skillicons();
