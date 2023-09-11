@@ -2,6 +2,7 @@ body{
     margin:0;
     padding: 0;
     box-sizing: content-box;
+    overflow-x: hidden;
 }
 .logo{
     height:30px;
@@ -172,7 +173,7 @@ body{
   .aboutMe{
     display:flex;
     height: 90vh;
-    
+    width:99.7vw;
     /* outline: 1px solid red;*/
     background-image: url('./images/aboutme.gif');
 
@@ -281,8 +282,9 @@ body{
    
     display:flex;
     height: 90vh;
-    width:98vw;
+    width:99.7vw;
     margin:auto;
+   
     justify-content: center;
     align-items: center;
     /*outline: 1px solid red;*/
@@ -347,13 +349,477 @@ body{
 }
 /* skills*/
 
+
+/* projectss*/
+
+.project{
+   
+    
+    height: 92vh;
+    width:98.5vw;
+   
+    display: flex;
+    flex-direction: column;
+    
+    /*outline:1px solid red;*/
+    background-image: url('./images/aboutme.gif');
+   
+    
+    
+  }
+  .projectsHeading{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: black;
+}
+.projectChild1{
+    width:100%;
+    height:16%;
+    /*outline:1px solid red;*/
+    position: relative;
+}
+.projectChild11{
+    position: absolute;
+    left:52%;
+     /*outline:1px solid red;*/
+    height:90%;
+    width:40%;
+    top:5%;
+    display: flex;
+}
+
+.projectChild2{
+    width:100%;
+    height:16%;
+    /*outline:1px solid red;*/
+    position: relative;
+}
+.projectChild21{
+    position: absolute;
+    left:38%;
+    /*outline:1px solid red;*/
+    height:90%;
+    width:40%;
+    top:5%;
+    display: flex;
+}
+.projectChild3{
+    width:100%;
+    height:16%;
+    /*outline:1px solid red;*/
+    position: relative;
+}
+.projectChild31{
+    position: absolute;
+    left:30%;
+    /*outline:1px solid red;*/
+    height:90%;
+    width:40%;
+    top:5%;
+    display: flex;
+}
+.projectChild4{
+    width:100%;
+    height:16%;
+     /*outline:1px solid red;*/
+    position: relative;
+}
+.projectChild41{
+    position: absolute;
+    left:22%;
+    /*outline:1px solid red;*/
+    height:90%;
+    width:40%;
+    top:5%;
+    display: flex;
+}
+.projectChild5{
+    width:100%;
+    height:16%;
+    /*outline:1px solid red;*/
+    position: relative;
+}
+.projectChild51{
+    position: absolute;
+    left:14%;
+     /*outline:1px solid red;*/
+    height:90%;
+    width:40%;
+    top:5%;
+    display: flex;
+}
+.projectChild6{
+    width:100%;
+    height:16%;
+    /*outline:1px solid red;*/
+    position: relative;
+}
+
+.projectChild61{
+    position: absolute;
+    left:6%;
+    /*outline:1px solid red;*/
+    height:90%;
+    width:40%;
+    top:5%;
+    display: flex;
+}
+.projectIconImage{
+    width:25%;
+     /*outline:1px solid red;*/
+    height:100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectIconImage img{
+    width:90%;
+    height:80%;
+}
+.projectIconName{
+    width:55%;
+     /*outline:1px solid red;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron';
+    font-size: 0.87rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+.projectIconButton{
+    width:20%;
+     /*outline:1px solid red;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    background-color: black;
+}
+
+.projectIconButton button{
+    width:130%;
+    height:120%;
+    font-family: 'Orbitron';
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 30%;
+}
+
+
+
+
+
+/* projectss*/
+
+/* Achievements*/
+.achievement{
+   
+    
+    height: 92vh;
+    width:98.5vw;
+   
+    display: flex;
+    flex-direction: column;
+    
+    /*outline: 1px solid red;*/
+    background-image: url('./images/aboutme.gif');
+    
+   
+    
+    
+  }
+
+  .achievementChild1{
+    flex:2;
+    /*outline: 1px solid red;*/
+    position: relative;
+
+  }
+ 
+  .achievementChild11{
+    position: absolute;
+    
+    left:20%;
+    top:5%;
+    /*outline: 1px solid red;*/
+    
+
+  }
+  .achievementWidthHeight{
+    width:50%;
+    height:90%;
+  }
+  .achievementName{
+    text-align: center;
+    width:100%;
+    height:25%;
+     /*outline: 1px solid red;*/
+    font-family: 'Orbitron';
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    
+    
+  }
+  .achievementAlign{
+    /*outline: 1px solid red;*/
+    height:75%;
+    width:100%;
+    display: flex;
+  }
+  .achievementChild111{
+    width:25%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+    background-color: rgb(46, 45, 45);
+    
+  }
+  .achievementImage{
+    height:90%;
+    width:80%;
+    display: flex;
+    margin: auto;
+    padding-top: 8%;
+   
+    
+  }
+  .achievementImage img{
+    width:100%;
+    height: 100%;
+  }
+  .achievementChild112{
+    width:57%;
+    /*outline: 1px solid red;*/
+    
+  }
+  .achievementChild1121{
+    padding-top: 2%;
+     height:40%;
+    text-align:center;
+     font-family: 'Orbitron';
+     font-size: 1rem;
+     font-weight: 400;
+     letter-spacing: 1px;
+     background-color: black;
+     color: white;
+
+  }
+  .achievementChild1122{
+    height:60%;
+    text-align:center;
+     font-family: 'Orbitron';
+     font-size: 0.8rem;
+     font-weight: 200;
+     letter-spacing: 1px;
+     background-color: black;
+     color: white;
+   
+    
+ }
+  .achievementChild113{
+    width:18%;
+     /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .achievementChild113 button{
+    
+    font-family: 'Orbitron';
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    border: none;
+    
+  }
+  .achievementChild2{
+    flex:2;
+    /*outline: 1px solid red;*/
+    position: relative;
+    
+  }
+
+  .achievementChild21{
+    position: absolute;
+    
+    left:20%;
+    top:5%;
+    
+
+  }
+  .achievementChild211{
+    width:25%;
+     /*outline: 1px solid red;*/
+    background-color: black;
+
+    
+  }
+  .achievementChild212{
+    width:50%;
+     /*outline: 1px solid red;*/
+  }
+  .achievementChild2121{
+    padding-top: 5%;
+    height:50%;
+    text-align:center;
+     font-family: 'Orbitron';
+     font-size: 1rem;
+     font-weight: 200;
+     letter-spacing: 1px;
+     background-color: black;
+     color: white;
+   
+  }
+  .achievementChild2122{
+    padding-top: 3%;
+    height:50%;
+    text-align:center;
+     font-family: 'Orbitron';
+     font-size: 1rem;
+     font-weight: 200;
+     letter-spacing: 1px;
+     background-color: black;
+     color: white;
+   
+  }
+  .achievementChild213{
+    width:25%;
+     /*outline: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3%;
+    background-color: black;
+  }
+  .achievementChild213 button{
+    font-family: 'Orbitron';
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    border: none;
+    
+  }
+  .achievementChild3{
+    flex:1.5;
+     /*outline: 1px solid red;*/
+    position: relative;
+    
+  }
+  .achievementChild31{
+    position: absolute;
+    
+    left:20%;
+    top:5%;
+    
+
+  }
+  .achievementChild311{
+    width:25%;
+     /*outline: 1px solid red;*/
+    background-color: black;
+    
+  }
+  .achievementChild312{
+    width:55%;
+     /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron';
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+
+  }
+  .achievementChild313{
+    width:20%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+  }
+  .achievementChild3{
+    flex:1.5;
+    /*outline: 1px solid red;*/
+    position: relative;
+    
+  }
+  .achievementChild4{
+    flex:1.5;
+     /*outline: 1px solid red;*/
+    position: relative;
+    
+  }
+  .achievementChild41{
+    position: absolute;
+    
+    left:20%;
+    top:5%;
+    
+
+  }
+  .achievementChild411{
+    width:25%;
+     /*outline: 1px solid red;*/
+    background-color: black;
+    
+  }
+  .achievementChild412{
+    width:55%;
+    /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron';
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+  }
+  .achievementChild413{
+    width:20%;
+    /*outline: 1px solid red;*/
+    background-color: black;
+  }
+  
+
+
+/* Achievements*/
+
+
   
 
 
 
 
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
+    body{
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+    }
     .homePageName{
         font-size: 1.3rem;
         font-weight: 600;
@@ -433,4 +899,117 @@ body{
         width: 20%;
         /*outline: 1px solid red;*/
     }
+    .projectChild11{
+        width:100%;
+        left:0;
+    }
+    .projectChild21{
+        width:100%;
+        left:0;
+    }
+    .projectChild31{
+        width:100%;
+        left:0;
+    }
+    .projectChild41{
+        width:100%;
+        left:0;
+    }
+
+    .projectChild51{
+        width:100%;
+        left:0;
+    }
+    .projectChild61{
+        width:100%;
+        left:0;
+    }
+    .projectIconName{
+        width:55%;
+        /*outline:1px solid red;*/
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Orbitron';
+        font-size: 0.6rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .projectIconButton button{
+        width:130%;
+        height:100%;
+        font-family: 'Orbitron';
+        font-size: 0.6rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        background-color: black;
+        color: white;
+        padding: 3% 5%;
+        border: none;
+        border-radius: 30%;
+    }
+    .achievementWidthHeight{
+        left:2%;
+        width:90%;
+        height:90%;
+      }
+      .achievementName{
+        text-align: center;
+    width:100%;
+    height:25%;
+    /*outline: 1px solid red;*/
+    font-family: 'Orbitron';
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+      }
+      .achievementAlign{
+        /*outline: 1px solid red;*/
+        height:75%;
+        width:100%;
+        display: flex;
+      }
+
+      .achievementChild1121{
+        padding-top: 2%;
+         height:40%;
+        text-align:center;
+         font-family: 'Orbitron';
+         font-size: 0.9rem;
+         font-weight: 400;
+         letter-spacing: 1px;
+         background-color: black;
+         color: white;
+    
+      }
+      .achievementChild1122{
+        height:60%;
+        text-align:center;
+         font-family: 'Orbitron';
+         font-size: 0.6rem;
+         font-weight: 200;
+         letter-spacing: 1px;
+         background-color: black;
+         color: white;
+       
+        
+     }
+     .achievementChild213 button{
+        font-family: 'Orbitron';
+        font-size: 0.6rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        background-color: black;
+        color: white;
+        border: none;
+        
+      }
+    
   }

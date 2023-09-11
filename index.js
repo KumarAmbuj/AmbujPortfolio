@@ -211,6 +211,7 @@ function printMiddleText() {
     "Core Java 85%",
     "HTML 5 80%",
     "CSS 3 75%",
+    "Bootstrap 70%",
     "Oops Concept 70%",
     "Django 65%",
     "MySql 70%",
@@ -231,7 +232,7 @@ function printMiddleText() {
     let ns = s.slice(0, i + 1).toUpperCase();
     midText.textContent = ns;
 
-    if (i == n - 1) {
+    if (i == s.length - 1) {
       setTimeout(() => {
         j = (j + 1) % n;
         s = arr[j];
@@ -241,7 +242,7 @@ function printMiddleText() {
   }, 120);
 }
 
-printMiddleText();
+//printMiddleText();
 
 function moveSkillIcon(icon) {
   let l = 5;
@@ -278,11 +279,6 @@ function moveSkillIcon(icon) {
     }
   }, 19);
 }
-
-//let icon = document.getElementById("html");
-//icon.style.display = "none";
-
-//moveSkillIcon(icon);
 
 function skillicons() {
   let arr = [];
@@ -342,3 +338,166 @@ function skillicons() {
 
 // calling skills section
 //skillicons();
+
+//project
+
+function printProjectMiddleText() {
+  let arr = [
+    "Snake & Ladder",
+    "Portfolio",
+    "Annapurna Bazar",
+    "Customer Churn Prediction",
+    "Image Captioning",
+    "Fooding Website",
+    "Library Management",
+    "Movies App",
+  ];
+  let midText = document.getElementById("projectMiddleText");
+  midText.textContent = "";
+  let i = -1;
+  let j = 0;
+  let s = arr[j];
+  let n = arr.length;
+  let id = setInterval(() => {
+    i++;
+    let ns = s.slice(0, i + 1).toUpperCase();
+    midText.textContent = ns;
+
+    if (i == s.length - 1) {
+      setTimeout(() => {
+        j = (j + 1) % n;
+        s = arr[j];
+        i = -1;
+      }, 700);
+    }
+  }, 200);
+}
+//printProjectMiddleText();
+
+function moveOneSection(icon, l) {
+  let left = -30;
+  let id = setInterval(() => {
+    left++;
+    icon.style.left = left + "%";
+    if (left > l) {
+      clearInterval(id);
+    }
+  }, 40);
+}
+
+let icon1 = document.getElementById("projectChild11");
+let icon2 = document.getElementById("projectChild21");
+let icon3 = document.getElementById("projectChild31");
+let icon4 = document.getElementById("projectChild41");
+let icon5 = document.getElementById("projectChild51");
+let icon6 = document.getElementById("projectChild61");
+
+let arr = [icon6, icon5, icon4, icon3, icon2, icon1];
+let leftValue = [6, 14, 22, 30, 38, 52];
+if (window.innerWidth > 500) {
+  for (let x of arr) {
+    x.style.display = "none";
+  }
+}
+//moveOneSection(icon);
+let count = -1;
+document.getElementById("Projects").addEventListener("mouseover", () => {
+  count++;
+
+  if (window.innerWidth > 600) {
+    for (let i = 0; i < 6; i++) {
+      if (count == 0) {
+        arr[i].style.display = "flex";
+        //moveOneSection(arr[i], leftValue[i]);
+        setInterval(() => {
+          //moveOneSection(arr[i], leftValue[i]);
+        }, 15000);
+      }
+    }
+  }
+});
+
+//achievent section
+let achieventIcon1 = document.getElementById("achievementChild11");
+let achieventIcon2 = document.getElementById("achievementChild21");
+let achieventIcon3 = document.getElementById("achievementChild31");
+let achieventIcon4 = document.getElementById("achievementChild41");
+let array = [achieventIcon1, achieventIcon2, achieventIcon3, achieventIcon4];
+
+//achievent section
+function achieventIconMoveRight(icon, l) {
+  let left = -50;
+  let id = setInterval(() => {
+    left++;
+    icon.style.left = left + "%";
+    if (left > l) {
+      clearInterval(id);
+    }
+  }, 50);
+}
+function achieventIconMoveLeft(icon, l) {
+  let left = 100;
+  let id = setInterval(() => {
+    left--;
+    icon.style.left = left + "%";
+    if (left < l) {
+      clearInterval(id);
+    }
+  }, 50);
+}
+//achieventIconMoveRight(array[0], 30);
+//achieventIconMoveLeft(array[1], 20);
+//achieventIconMoveRight(array[2], 30);
+//achieventIconMoveLeft(array[3], 20);
+
+let count1 = -1;
+document.getElementById("Achievements").addEventListener("mouseover", () => {
+  count1++;
+
+  if (window.innerWidth > 600) {
+    if (count1 == 0) {
+      achieventIconMoveRight(array[0], 35);
+      achieventIconMoveLeft(array[1], 15);
+      achieventIconMoveRight(array[2], 35);
+      achieventIconMoveLeft(array[3], 15);
+
+      setInterval(() => {
+        achieventIconMoveRight(array[0], 35);
+        achieventIconMoveLeft(array[1], 15);
+        achieventIconMoveRight(array[2], 35);
+        achieventIconMoveLeft(array[3], 15);
+      }, 15000);
+    }
+  } //else {
+  //if (count1 == 0) {
+  //  achieventIconMoveRight(array[0], 3);
+  //  achieventIconMoveLeft(array[1], 2);
+  //  achieventIconMoveRight(array[2], 3);
+  //  achieventIconMoveLeft(array[3], 2);
+  //
+  //  setInterval(() => {
+  //    achieventIconMoveRight(array[0], 3);
+  //    achieventIconMoveLeft(array[1], 2);
+  //    achieventIconMoveRight(array[2], 3);
+  //    achieventIconMoveLeft(array[3], 2);
+  //  }, 9000);
+  //}
+  //}
+});
+
+let leetcodeRank = document.getElementById("leetcodeRank");
+let hackerrankPython = document.getElementById("hackerrankPython");
+
+let flag = true;
+setInterval(() => {
+  if (flag) {
+    leetcodeRank.style.visibility = "visible";
+    hackerrankPython.style.visibility = "visible";
+  } else {
+    leetcodeRank.style.visibility = "hidden";
+    hackerrankPython.style.visibility = "hidden";
+  }
+  flag = !flag;
+}, 600);
+
+// achievement section
