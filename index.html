@@ -34,12 +34,12 @@
   <body>
     <!--Navbar Header-->
     <section class="navbarHeader" id="navbarHeader">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar bg-dark navBar">
         <div class="container-fluid">
           <div class="d-flex">
             <a class="navbar-brand" href="#"
-              ><div class="d-flex logo me-1">
-                <img src="./images/logo.jpg" />Ambuj
+              ><div class="d-flex logo me-2">
+                <img src="./images/logo.jpg" /><span class="ambuj">Ambuj</span>
               </div>
             </a>
           </div>
@@ -51,34 +51,56 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style="background-color: white"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="background-color: black"
+              ><i
+                class="fa fa-arrow-circle-o-down icon"
+                style="color: white; font-size: 27px"
+              ></i
+            ></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-lg-0 mx-lg-5">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><span class="navBarName">HOME</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#About"
+                  ><span class="navBarName">About</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#Skills"
+                  ><span class="navBarName">Skills</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#Projects"
+                  ><span class="navBarName">Projects</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Trainig</a>
+                <a class="nav-link" href="#Trainings"
+                  ><span class="navBarName">Training</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="#"
+                  ><span class="navBarName">Education</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Achievements</a>
+                <a class="nav-link" href="#Achievements"
+                  ><span class="navBarName">Achievements</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Hobbies</a>
+                <a class="nav-link" href="#Experience"
+                  ><span class="navBarName">Experience</span></a
+                >
               </li>
             </ul>
           </div>
@@ -89,7 +111,7 @@
     <!--Navbar Header-->
 
     <!--Home Page-->
-    <section class="homePage" id="homePage">
+    <section class="homePage" id="homePage" style="margin-top: 4%">
       <div class="homePageParent" id="homePageParent">
         <div class="homePageChild1">
           <div class="homePageChild11" id="homePageChild11">
@@ -143,7 +165,7 @@
 
     <!--About Me-->
 
-    <section id="about" class="about">
+    <section id="About" class="about">
       <div class="aboutMeMainText">About Me</div>
       <div class="aboutMe" id="aboutMe">
         <div class="aboutMeChild1" id="aboutMeChild1">
@@ -562,71 +584,108 @@
     <section id="Projects">
       <div class="aboutMeMainText projectsHeading">Projects</div>
       <div class="project" id="project">
-      
-         <div class="projectChild1" id="projectChild1">
+        <div class="projectChild1" id="projectChild1">
           <div class="projectChild11" id="projectChild11">
             <div class="projectIconImage">
-              <img src="./images/download (4).jpg">
+              <img src="./images/download (4).jpg" />
             </div>
             <div class="projectIconName">Customer Churn Prediction</div>
             <div class="projectIconButton">
-              <a href="https://github.com/KumarAmbuj/customer-churn-prediction.git" target="_blank"><button>Hosted</button></a>
-              <a href="https://github.com/KumarAmbuj/customer-churn-prediction.git" target="_blank"><button>Github</button></a>
+              <a
+                href="https://github.com/KumarAmbuj/customer-churn-prediction.git"
+                target="_blank"
+                ><button>Hosted</button></a
+              >
+              <a
+                href="https://github.com/KumarAmbuj/customer-churn-prediction.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
             </div>
           </div>
-         </div>
-         <div class="projectChild2" id="projectChild2">
+        </div>
+        <div class="projectChild2" id="projectChild2">
           <div class="projectChild21" id="projectChild21">
             <div class="projectIconImage">
-              <img src="./images/imagecaptioning3.png">
+              <img src="./images/imagecaptioning3.png" />
             </div>
             <div class="projectIconName">Image Captioning</div>
             <div class="projectIconButton">
-              <a href="https://github.com/KumarAmbuj/project_image_captioning.git" target="_blank"><button>Hosted</button></a>
-              <a href="https://github.com/KumarAmbuj/project_image_captioning.git" target="_blank"><button>Github</button></a>
+              <a
+                href="https://github.com/KumarAmbuj/project_image_captioning.git"
+                target="_blank"
+                ><button>Hosted</button></a
+              >
+              <a
+                href="https://github.com/KumarAmbuj/project_image_captioning.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
             </div>
           </div>
-         </div>
-         <div class="projectChild3" id="projectChild3">
+        </div>
+        <div class="projectChild3" id="projectChild3">
           <div class="projectChild31" id="projectChild31">
             <div class="projectIconImage">
-              <img src="./images/snakeladder.png">
+              <img src="./images/snakeladder.png" />
             </div>
             <div class="projectIconName">Snake & Ladder</div>
             <div class="projectIconButton">
-              <a href="https://kumarambuj.github.io/SnakeLadderGameHost/" target="_blank"><button>Hosted</button></a>
-              <a href="https://github.com/KumarAmbuj/SnakeLadderGame.git" target="_blank"><button>Github</button></a>
+              <a
+                href="https://kumarambuj.github.io/SnakeLadderGameHost/"
+                target="_blank"
+                ><button>Hosted</button></a
+              >
+              <a
+                href="https://github.com/KumarAmbuj/SnakeLadderGame.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
             </div>
           </div>
-         </div>
-         <div class="projectChild4" id="projectChild4">
+        </div>
+        <div class="projectChild4" id="projectChild4">
           <div class="projectChild41" id="projectChild41">
             <div class="projectIconImage">
-              <img src="./images/portfolio.png">
+              <img src="./images/portfolio.png" />
             </div>
             <div class="projectIconName">Portfolio</div>
             <div class="projectIconButton">
-              <a href="https://kumar-ambuj.netlify.app/" target="_blank"><button>Hosted</button></a>
-              <a href="https://github.com/KumarAmbuj/myportfolio.git" target="_blank"><button>Github</button></a>
+              <a href="https://kumar-ambuj.netlify.app/" target="_blank"
+                ><button>Hosted</button></a
+              >
+              <a
+                href="https://github.com/KumarAmbuj/myportfolio.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
             </div>
           </div>
-         </div>
-         <div class="projectChild5" id="projectChild5">
+        </div>
+        <div class="projectChild5" id="projectChild5">
           <div class="projectChild51" id="projectChild51">
             <div class="projectIconImage">
-              <img src="./images/annapurnabazar3.jpg">
+              <img src="./images/annapurnabazar3.jpg" />
             </div>
             <div class="projectIconName">Annapurna Bazar</div>
             <div class="projectIconButton">
-              <a href="https://github.com/KumarAmbuj/ecommerce-website.git" target="_blank"><button>Hosted</button></a>
-              <a href="https://github.com/KumarAmbuj/ecommerce-website.git" target="_blank"><button>Github</button></a>
+              <a
+                href="https://github.com/KumarAmbuj/ecommerce-website.git"
+                target="_blank"
+                ><button>Hosted</button></a
+              >
+              <a
+                href="https://github.com/KumarAmbuj/ecommerce-website.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
             </div>
           </div>
-         </div>
-         <div class="projectChild6" id="projectChild6">
+        </div>
+        <div class="projectChild6" id="projectChild6">
           <div class="projectChild61" id="projectChild61">
             <div class="projectIconImage">
-              <img src="./images/movies.jpg">
+              <img src="./images/movies.jpg" />
             </div>
             <div class="projectIconName">Movies App</div>
             <div class="projectIconButton">
@@ -634,119 +693,265 @@
               <a href="#"><button>Github</button></a>
             </div>
           </div>
-         </div>
-         
+        </div>
       </div>
-    </div>
     </section>
     <!--Projects-->
 
     <!--Achievements-->
     <section id="Achievements">
-      
-      <div class="aboutMeMainText projectsHeading" style="background-color: black;">Achievements</div>
-      <div class="achievement" id="achievement">
-
-       <div class="achievementChild1">
-        <div class="achievementChild11 achievementWidthHeight" id="achievementChild11">
-          <div class="achievementName">Leetcode</div>
-          <div class="achievementAlign">
-          
-          <div class="achievementChild111">
-            <div class="achievementImage">
-              <img src="./images/leetcode.png">
-            </div>
-          </div>
-          <div class="achievementChild112">
-            <div class="achievementChild1121">  DSA :- <span id="leetcodeRank">Rank 2200</span></div>
-            <div class="achievementChild1122">Solved more than 1300 questions on topics Dynamic Programming, Graph, Tree , Greedy Algo...</div>
-          </div>
-          <div class="achievementChild113">
-            <div>
-              <a href="https://leetcode.com/kumarambuj/" target="_blank"><button>visit</button></a>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-       </div>
-       <div class="achievementChild2">
-        <div class="achievementChild21 achievementWidthHeight" id="achievementChild21">
-          <div class="achievementName">Hackerrank</div>
-          <div class="achievementAlign">
-          
-          <div class="achievementChild211">
-            <div class="achievementImage">
-              <img src="./images/hackerrank.png">
-            </div>
-          </div>
-          <div class="achievementChild212">
-            <div class="achievementChild2121">Python :- <span id="hackerrankPython">Rank 1</span></div>
-            <div class="achievementChild2122">Java :- Rank 19000</div>
-          </div>
-          <div class="achievementChild213">
-            <div>
-              <a href="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python" target="_blank"><button>visit</button></a>
-            </div>
-            <div>
-              <a href="https://www.hackerrank.com/certificates/eddd026bd31b" target="_blank"><button>certificate</button></a>
-            </div>
-            <div>
-              <a href="https://www.hackerrank.com/domains/java?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=java" target="_blank"><button>visit</button></a>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-       </div>
-       <div class="achievementChild3">
-        <div class="achievementChild31 achievementWidthHeight" id="achievementChild31">
-          <div class="achievementName">Coderush</div>
-          <div class="achievementAlign">
-          
-          <div class="achievementChild311">
-            <div class="achievementImage">
-              <img src="./images/newton.png">
-            </div>
-          </div>
-          <div class="achievementChild312"> Global Rank 271</div>
-          <div class="achievementChild313"></div>
-          
-          </div>
-        </div>
-       </div>
-       <div class="achievementChild4">
-        <div class="achievementChild41 achievementWidthHeight" id="achievementChild41">
-          <div class="achievementName">Cricket</div>
-          <div class="achievementAlign">
-          
-          <div class="achievementChild411">
-            <div class="achievementImage">
-              <img src="./images/cricket.jpg">
-            </div>
-          </div>
-          <div class="achievementChild412">Played District Level Cricket</div>
-          <div class="achievementChild413"></div>
-          
-          </div>
-        </div>
-       </div>
-
-
+      <div
+        class="aboutMeMainText projectsHeading"
+        style="background-color: black"
+      >
+        Achievements
       </div>
-
-
-
-
-
-
+      <div class="achievement" id="achievement">
+        <div class="achievementChild1">
+          <div
+            class="achievementChild11 achievementWidthHeight"
+            id="achievementChild11"
+          >
+            <div class="achievementName">Leetcode</div>
+            <div class="achievementAlign">
+              <div class="achievementChild111">
+                <div class="achievementImage">
+                  <img src="./images/leetcode.png" />
+                </div>
+              </div>
+              <div class="achievementChild112">
+                <div class="achievementChild1121">
+                  DSA :- <span id="leetcodeRank">Rank 2200</span>
+                </div>
+                <div class="achievementChild1122">
+                  Solved more than 1300 questions on topics Dynamic Programming,
+                  Graph, Tree , Greedy Algo...
+                </div>
+              </div>
+              <div class="achievementChild113">
+                <div>
+                  <a href="https://leetcode.com/kumarambuj/" target="_blank"
+                    ><button>visit</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="achievementChild2">
+          <div
+            class="achievementChild21 achievementWidthHeight"
+            id="achievementChild21"
+          >
+            <div class="achievementName">Hackerrank</div>
+            <div class="achievementAlign">
+              <div class="achievementChild211">
+                <div class="achievementImage">
+                  <img src="./images/hackerrank.png" />
+                </div>
+              </div>
+              <div class="achievementChild212">
+                <div class="achievementChild2121">
+                  Python :- <span id="hackerrankPython">Rank 1</span>
+                </div>
+                <div class="achievementChild2122">Java :- Rank 19000</div>
+              </div>
+              <div class="achievementChild213">
+                <div>
+                  <a
+                    href="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python"
+                    target="_blank"
+                    ><button>visit</button></a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="https://www.hackerrank.com/certificates/eddd026bd31b"
+                    target="_blank"
+                    ><button>certificate</button></a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="https://www.hackerrank.com/domains/java?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=java"
+                    target="_blank"
+                    ><button>visit</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="achievementChild3">
+          <div
+            class="achievementChild31 achievementWidthHeight"
+            id="achievementChild31"
+          >
+            <div class="achievementName">Coderush</div>
+            <div class="achievementAlign">
+              <div class="achievementChild311">
+                <div class="achievementImage">
+                  <img src="./images/newton.png" />
+                </div>
+              </div>
+              <div class="achievementChild312">Global Rank 271</div>
+              <div class="achievementChild313"></div>
+            </div>
+          </div>
+        </div>
+        <div class="achievementChild4">
+          <div
+            class="achievementChild41 achievementWidthHeight"
+            id="achievementChild41"
+          >
+            <div class="achievementName">Cricket</div>
+            <div class="achievementAlign">
+              <div class="achievementChild411">
+                <div class="achievementImage">
+                  <img src="./images/cricket.jpg" />
+                </div>
+              </div>
+              <div class="achievementChild412">
+                Played District Level Cricket
+              </div>
+              <div class="achievementChild413"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!--Achievements-->
 
+    <!--Experience-->
 
+    <section id="Experience">
+      <div
+        class="aboutMeMainText projectsHeading"
+        style="background-color: black"
+      >
+        Experience
+      </div>
+      <div class="experience" id="experience">
+        <div class="experienceChild1">
+          <div class="experienceChild11">
+            <div class="experienceName">Data Scientist</div>
+            <div class="experienceText">
+              During my internship at
+              <span class="makeBold">Decision Minds</span>
+              in <span class="makeBold">Noida</span>, I gained valuable
+              experience in data science. I became proficient in using MySQL for
+              data retrieval and management, as well as honed my skills in data
+              manipulation and analysis using Python libraries like NumPy and
+              Pandas. Additionally, I delved into advanced analytics techniques,
+              exploring various data science models to solve real-world
+              problems.
+            </div>
+          </div>
+        </div>
+        <div class="experienceChild2">
+          <div class="experienceChild21">
+            <div class="experienceName">Full Stack Developer</div>
+            <div class="experienceText">
+              As a full-stack developer at
+              <span class="makeBold">Dutta Innovations</span> Pvt Ltd, I managed
+              both front-end and back-end development. I utilized HTML, CSS,
+              JavaScript, Bootstrap, and jQuery for the front end, while
+              implementing the back end with Python using the Django framework.
+              The database was handled through SQLite3. This role enabled me to
+              create dynamic web applications, covering the entire development
+              stack.
+            </div>
+          </div>
+        </div>
+        <div class="experienceChild3">
+          <div class="experienceChild31">
+            <div class="experienceName">Computer Teacher</div>
+            <div class="experienceText">
+              I worked as a teacher at
+              <span class="makeBold">Kota Point Ranchi</span>, responsible for
+              instructing C++, Java, Python, Data Structures and Algorithms,
+              MySQL, and front-end HTML. My role involved imparting
+              comprehensive knowledge in these subjects to students, fostering
+              their programming and web development skills to prepare them for
+              future endeavors.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--Experience-->
 
-   <!--Achievements-->
+    <!--Training-->
+    <section id="Trainings">
+      <div
+        class="aboutMeMainText projectsHeading"
+        style="background-color: black"
+      >
+        Trainigs
+      </div>
+      <div class="training">
+        <div class="trainingChild1">
+          <div class="trainingChild11 trainingAlignment">
+            <div class="trainingName">MERN Stack Development</div>
+            <div class="trainingText">
+              Enrolled in <span class="trainingMakeBold">Newton School</span>'s
+              MERN stack program, I've developed Core Java and mastered Data
+              Structures and Algorithm, essential for building robust and
+              efficient web applications.
+            </div>
+          </div>
+        </div>
+        <div class="trainingChild2">
+          <div class="trainingChild21 trainingAlignment">
+            <div class="trainingName">Machine Learning</div>
+            <div class="trainingText">
+              Completed machine learning training at
+              <span class="trainingMakeBold">Auribises</span> Pvt Ltd in
+              Ludhiana, gaining skills in various ML algorithms, data analysis,
+              and model building for real-world applications.
+            </div>
+          </div>
+        </div>
+        <div class="trainingChild3">
+          <div class="trainingChild31 trainingAlignment">
+            <div class="trainingName">Full Stack Development</div>
+            <div class="trainingText">
+              Attained full stack development expertise at
+              <span class="trainingMakeBold">Hi-Tech Academy</span> in Ranchi,
+              focusing on PHP for server-side scripting, building dynamic web
+              applications with comprehensive front-end and back-end skills.
+            </div>
+          </div>
+        </div>
+        <div class="trainingChild4">
+          <div class="trainingChild41 trainingAlignment">
+            <div class="trainingName">Data Strucutre and Algorithm</div>
+            <div class="trainingText">
+              Earned a certification in Data Structures and Algorithms using
+              Python at <span class="trainingMakeBold">Auribises</span> in
+              Ludhiana, honing my skills through practical exercises on
+              GeeksforGeeks for real-world problem-solving.
+            </div>
+          </div>
+        </div>
+        <div class="trainingChild5">
+          <div class="trainingChild51 trainingAlignment">
+            <div class="trainingName">Core Java</div>
+            <div class="trainingText">
+              Completed a Core Java certification at
+              <span class="trainingMakeBold">Durgasoft</span>, mastering
+              Object-Oriented Programming, Regular Expressions, Multithreading,
+              and Garbage Collection, enhancing Java development expertise.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Training-->
+
     <script src="index.js"></script>
   </body>
 </html>

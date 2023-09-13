@@ -56,7 +56,7 @@ function printName() {
   }, 200);
 }
 
-//printName();
+printName();
 
 //up and down
 
@@ -159,7 +159,7 @@ function upAndDown() {
     }
   }, 100);
 }
-//upAndDown();
+upAndDown();
 
 // about me text printing
 
@@ -190,9 +190,9 @@ function printAboutMeText() {
         aboutMeText.textContent = "";
       }, 5000);
     }
-  }, 50);
+  }, 100);
 }
-//printAboutMeText();
+printAboutMeText();
 
 //
 //skill middle text
@@ -242,7 +242,7 @@ function printMiddleText() {
   }, 120);
 }
 
-//printMiddleText();
+printMiddleText();
 
 function moveSkillIcon(icon) {
   let l = 5;
@@ -337,42 +337,9 @@ function skillicons() {
 }
 
 // calling skills section
-//skillicons();
+skillicons();
 
 //project
-
-function printProjectMiddleText() {
-  let arr = [
-    "Snake & Ladder",
-    "Portfolio",
-    "Annapurna Bazar",
-    "Customer Churn Prediction",
-    "Image Captioning",
-    "Fooding Website",
-    "Library Management",
-    "Movies App",
-  ];
-  let midText = document.getElementById("projectMiddleText");
-  midText.textContent = "";
-  let i = -1;
-  let j = 0;
-  let s = arr[j];
-  let n = arr.length;
-  let id = setInterval(() => {
-    i++;
-    let ns = s.slice(0, i + 1).toUpperCase();
-    midText.textContent = ns;
-
-    if (i == s.length - 1) {
-      setTimeout(() => {
-        j = (j + 1) % n;
-        s = arr[j];
-        i = -1;
-      }, 700);
-    }
-  }, 200);
-}
-//printProjectMiddleText();
 
 function moveOneSection(icon, l) {
   let left = -30;
@@ -408,9 +375,9 @@ document.getElementById("Projects").addEventListener("mouseover", () => {
     for (let i = 0; i < 6; i++) {
       if (count == 0) {
         arr[i].style.display = "flex";
-        //moveOneSection(arr[i], leftValue[i]);
+        moveOneSection(arr[i], leftValue[i]);
         setInterval(() => {
-          //moveOneSection(arr[i], leftValue[i]);
+          moveOneSection(arr[i], leftValue[i]);
         }, 15000);
       }
     }

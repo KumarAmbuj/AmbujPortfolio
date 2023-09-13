@@ -1,12 +1,26 @@
+* {
+  scroll-behavior: auto;
+}
 body{
     margin:0;
     padding: 0;
     box-sizing: content-box;
     overflow-x: hidden;
+    background-color: black;
+}
+.navBar{
+  position: fixed;
+   width: 100%; top:0; 
+  z-index: 2;
+ 
+  color:white !important;
+    
 }
 .logo{
     height:30px;
     width: 30px;
+    margin-left: 5px;
+    margin-right: 8px;
 }
 .homePageParent{
     height: 90vh;
@@ -17,6 +31,22 @@ body{
     
 
 }
+.ambuj{
+  display: block;
+  color:white;
+  font-size: 30px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.navBarName{
+  
+  color:white;
+  font-family: 'Orbitron';
+  font-size: 0.85rem;
+  
+  letter-spacing: 1px;
+}
+
 .homePageChild1{
     height:100%;
     flex:2;
@@ -28,7 +58,7 @@ body{
     padding: 5% 1%;
     color: white;
     font-family: 'Orbitron';
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
     position: relative;
@@ -49,7 +79,7 @@ body{
     padding: 2% 1%;
     color: white;
     font-family: 'Orbitron';
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
     position: relative;
@@ -139,7 +169,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron';
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
     background-color: black;
@@ -268,7 +298,7 @@ body{
 .aboutMeMainText{
     text-align: center;
     font-family: 'Orbitron';
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 650;
     letter-spacing: 1px;
     background-color: black;
@@ -807,6 +837,199 @@ body{
 
 /* Achievements*/
 
+/*Experience*/
+.experience{
+height: 92vh;
+width:98.5vw;
+
+display: flex;
+flex-direction: column;
+
+/*outline: 1px solid red;*/
+background-image: url('./images/aboutme.gif');
+}
+.experienceChild1{
+  /*outline: 1px solid red;*/
+  position: relative;
+  height:33%;
+}
+.experienceChild11{
+  position: absolute;
+  width:70%;
+  height:93%;
+ /*outline: 1px solid red;*/
+  left:7%;
+  top:3%;
+  background-image: url('./images/exp.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  
+}
+.experienceChild11 img{
+  height:100%;
+  width: 100%;
+}
+.experienceChild2{
+  /*outline: 1px solid red;*/
+  position: relative;
+  height:33%;
+}
+.experienceChild21{
+  position:absolute;
+  width:70%;
+  height:93%;
+  /*outline: 1px solid red;*/
+  right:7%;
+  top:3%;
+  background-image: url('./images/exp.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  
+}
+.experienceChild3{
+  /*outline: 1px solid red;*/
+  position: relative;
+  height:33%;
+}
+.experienceChild31{
+  position: absolute;
+  width:70%;
+  height:93%;
+  /*outline: 1px solid red;*/
+  left:7%;
+  top:3%;
+  background-image: url('./images/exp.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  
+  
+}
+.experienceName{
+ 
+  text-align: center;
+  font-family: 'Orbitron';
+  font-size: 1.4rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+  
+  color: white;
+  
+
+
+}
+.experienceText{
+ 
+  text-align: center;
+  font-family: 'Orbitron';
+  font-size: 0.9rem;
+  font-weight: 150;
+  letter-spacing: 1px;
+  
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+
+
+}
+.makeBold{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.training{
+  height: 92vh;
+  width:98.5vw;
+  
+  display: flex;
+  flex-direction: column;
+  
+  /*outline: 1px solid red;*/
+  background-image: url('./images/homepageimag1.gif');
+  }
+.trainingChild1{
+  position: relative;
+  /*outline: 1px solid red;*/
+  height:20%;
+
+}
+.trainingAlignment{
+  position: absolute;
+  height:96%;
+  width:60%;
+  top:2%;
+  bottom: 2%;
+  /*outline: 1px solid red;*/
+ 
+  background-color: black;
+
+}
+.trainingChild11{
+  left:5%;
+}
+.trainingChild2{
+  position: relative;
+ /*outline: 1px solid red;*/
+  height:20%;
+
+}
+.trainingChild21{
+  left:20%;
+}
+.trainingChild3{
+  position: relative;
+  /*outline: 1px solid red;*/
+  height:20%;
+
+}
+.trainingChild31{
+  left:35%;
+}
+.trainingChild4{
+  position: relative;
+  /*outline: 1px solid red;*/
+  height:20%;
+
+}
+.trainingChild41{
+  left:15%;
+}
+.trainingChild5{
+  position: relative;
+  /*outline: 1px solid red;*/
+  height:20%;
+
+}
+.trainingChild51{
+  left:5%;
+}
+.trainingName{
+  text-align: center;
+  font-family: 'Orbitron';
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  
+  color: white;
+  
+  
+}
+.trainingText{
+  text-align: center;
+  font-family: 'Orbitron';
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  
+  color: white;
+
+}
+.trainingMakeBold{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+/*Experience*/
+
 
   
 
@@ -819,6 +1042,12 @@ body{
         margin:0;
         padding:0;
         overflow-x: hidden;
+    }
+    .homePage{
+      margin-top: 0%;
+    }
+    .homePageParent{
+      margin-top: 13%;
     }
     .homePageName{
         font-size: 1.3rem;
@@ -932,7 +1161,7 @@ body{
         justify-content: center;
         align-items: center;
         font-family: 'Orbitron';
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         font-weight: 300;
         letter-spacing: 1px;
         background-color: black;
@@ -1011,5 +1240,95 @@ body{
         border: none;
         
       }
-    
+
+      .experienceChild11{
+        position:absolute;
+        width:90%;
+        height:90%;
+       /*outline: 1px solid red;*/
+        left:4%;
+        top:4%;
+      }
+      .experienceChild21{
+        position:absolute;
+        width:90%;
+        height:90%;
+      /*outline: 1px solid red;*/
+        right:4%;
+        top:4%;
+      }
+      .experienceChild31{
+        position:absolute;
+        width:90%;
+        height:90%;
+       /*outline: 1px solid red;*/
+        left:4%;
+        top:4%;
+      }
+      .experienceName{
+        text-align: center;
+        font-family: 'Orbitron';
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+       
+        color: white;
+      
+      
+      }
+      .experienceText{
+ 
+        text-align: center;
+        font-family: 'Orbitron';
+        font-size: 0.6rem;
+        font-weight: 50;
+        letter-spacing: 1px;
+        
+        color: white;
+        margin:auto 10px;
+        padding:auto;
+        
+      
+      
+      }
+      .makeBold{
+        font-size: 0.8rem;
+        font-weight: 150;
+      }
+      .trainingAlignment{
+        position: absolute;
+        height:85%;
+        width:90%;
+        top:7%;
+       /*outline: 1px solid red;*/
+        left:5%;
+      
+      }
+     
+      .trainingText{
+        text-align: center;
+        font-family: 'Orbitron';
+        font-size: 0.6rem;
+        font-weight: 150;
+        letter-spacing: 1px;
+        
+        color: white;
+      
+      }
+      .trainingMakeBold{
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+      .trainingName{
+        text-align: center;
+        font-family: 'Orbitron';
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        
+        color: white;
+        
+        
+      }
+      
   }
