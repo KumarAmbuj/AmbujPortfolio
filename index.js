@@ -20,8 +20,7 @@ function printName() {
       setTimeout(() => {
         flag = false;
       }, 1000);
-    }
-    if (i == -1) {
+    } else if (i == -1) {
       setTimeout(() => {
         flag = true;
       }, 1000);
@@ -361,28 +360,19 @@ let icon6 = document.getElementById("projectChild61");
 
 let arr = [icon6, icon5, icon4, icon3, icon2, icon1];
 let leftValue = [6, 14, 22, 30, 38, 52];
-if (window.innerWidth > 500) {
-  for (let x of arr) {
-    x.style.display = "none";
-  }
-}
+
 //moveOneSection(icon);
 let count = -1;
-document.getElementById("Projects").addEventListener("mouseover", () => {
-  count++;
 
-  if (window.innerWidth > 600) {
-    for (let i = 0; i < 6; i++) {
-      if (count == 0) {
-        arr[i].style.display = "flex";
-        moveOneSection(arr[i], leftValue[i]);
-        setInterval(() => {
-          moveOneSection(arr[i], leftValue[i]);
-        }, 15000);
-      }
-    }
+if (window.innerWidth > 600) {
+  for (let i = 0; i < 6; i++) {
+    arr[i].style.display = "flex";
+    moveOneSection(arr[i], leftValue[i]);
+    setInterval(() => {
+      moveOneSection(arr[i], leftValue[i]);
+    }, 10000);
   }
-});
+}
 
 //achievent section
 let achieventIcon1 = document.getElementById("achievementChild11");
@@ -418,39 +408,37 @@ function achieventIconMoveLeft(icon, l) {
 //achieventIconMoveLeft(array[3], 20);
 
 let count1 = -1;
-document.getElementById("Achievements").addEventListener("mouseover", () => {
-  count1++;
 
-  if (window.innerWidth > 600) {
-    if (count1 == 0) {
+if (window.innerWidth > 600) {
+  if (count1 == -1) {
+    count++;
+    achieventIconMoveRight(array[0], 35);
+    achieventIconMoveLeft(array[1], 15);
+    achieventIconMoveRight(array[2], 35);
+    achieventIconMoveLeft(array[3], 15);
+  } else {
+    setInterval(() => {
       achieventIconMoveRight(array[0], 35);
       achieventIconMoveLeft(array[1], 15);
       achieventIconMoveRight(array[2], 35);
       achieventIconMoveLeft(array[3], 15);
-
-      setInterval(() => {
-        achieventIconMoveRight(array[0], 35);
-        achieventIconMoveLeft(array[1], 15);
-        achieventIconMoveRight(array[2], 35);
-        achieventIconMoveLeft(array[3], 15);
-      }, 15000);
-    }
-  } //else {
-  //if (count1 == 0) {
-  //  achieventIconMoveRight(array[0], 3);
-  //  achieventIconMoveLeft(array[1], 2);
-  //  achieventIconMoveRight(array[2], 3);
-  //  achieventIconMoveLeft(array[3], 2);
-  //
-  //  setInterval(() => {
-  //    achieventIconMoveRight(array[0], 3);
-  //    achieventIconMoveLeft(array[1], 2);
-  //    achieventIconMoveRight(array[2], 3);
-  //    achieventIconMoveLeft(array[3], 2);
-  //  }, 9000);
-  //}
-  //}
-});
+    }, 15000);
+  }
+} //else {
+//if (count1 == 0) {
+//  achieventIconMoveRight(array[0], 3);
+//  achieventIconMoveLeft(array[1], 2);
+//  achieventIconMoveRight(array[2], 3);
+//  achieventIconMoveLeft(array[3], 2);
+//
+//  setInterval(() => {
+//    achieventIconMoveRight(array[0], 3);
+//    achieventIconMoveLeft(array[1], 2);
+//    achieventIconMoveRight(array[2], 3);
+//    achieventIconMoveLeft(array[3], 2);
+//  }, 9000);
+//}
+//}
 
 let leetcodeRank = document.getElementById("leetcodeRank");
 let hackerrankPython = document.getElementById("hackerrankPython");

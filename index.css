@@ -244,6 +244,7 @@ body{
     color: white;
     padding: 5% 5%;
     object-fit: contain;
+    box-shadow: 10px 10px 5px grey;
 
   }
   .aboutMeChild21 img{
@@ -298,7 +299,7 @@ body{
 .aboutMeMainText{
     text-align: center;
     font-family: 'Orbitron';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 650;
     letter-spacing: 1px;
     background-color: black;
@@ -385,7 +386,7 @@ body{
 .project{
    
     
-    height: 92vh;
+    height: 100vh;
     width:98.5vw;
    
     display: flex;
@@ -416,6 +417,7 @@ body{
     width:40%;
     top:5%;
     display: flex;
+    box-shadow: 7px 7px 3px grey;
 }
 
 .projectChild2{
@@ -432,6 +434,7 @@ body{
     width:40%;
     top:5%;
     display: flex;
+    box-shadow: 7px 7px 3px grey;
 }
 .projectChild3{
     width:100%;
@@ -447,6 +450,7 @@ body{
     width:40%;
     top:5%;
     display: flex;
+    box-shadow: 7px 7px 3px grey;
 }
 .projectChild4{
     width:100%;
@@ -462,6 +466,7 @@ body{
     width:40%;
     top:5%;
     display: flex;
+    box-shadow: 7px 7px 3px grey;
 }
 .projectChild5{
     width:100%;
@@ -477,6 +482,7 @@ body{
     width:40%;
     top:5%;
     display: flex;
+    box-shadow: 7px 7px 3px grey;
 }
 .projectChild6{
     width:100%;
@@ -493,6 +499,7 @@ body{
     width:40%;
     top:5%;
     display: flex;
+    box-shadow: 7px 7px 3px grey;
 }
 .projectIconImage{
     width:25%;
@@ -761,6 +768,7 @@ body{
     left:20%;
     top:5%;
     
+    
 
   }
   .achievementChild311{
@@ -839,7 +847,7 @@ body{
 
 /*Experience*/
 .experience{
-height: 92vh;
+height: 98vh;
 width:98.5vw;
 
 display: flex;
@@ -856,14 +864,20 @@ background-image: url('./images/aboutme.gif');
 .experienceChild11{
   position: absolute;
   width:70%;
-  height:93%;
+  height:90%;
  /*outline: 1px solid red;*/
   left:7%;
-  top:3%;
-  background-image: url('./images/exp.jpg');
-  background-size: contain;
-  background-repeat: repeat;
+  top:5%;
+  background-color: black;
+  box-shadow: 6px 6px 6px rgb(196, 194, 194);
   
+}
+.experienceChild11:hover{
+  transform: scale(1.09);
+  box-shadow: 7px 7px 3px grey;
+  border: 1px solid white;
+  transition: 0.7s;
+  z-index: 2;
 }
 .experienceChild11 img{
   height:100%;
@@ -877,14 +891,20 @@ background-image: url('./images/aboutme.gif');
 .experienceChild21{
   position:absolute;
   width:70%;
-  height:93%;
+  height:90%;
   /*outline: 1px solid red;*/
   right:7%;
-  top:3%;
-  background-image: url('./images/exp.jpg');
-  background-size: contain;
-  background-repeat: repeat;
+  top:7%;
+  background-color: black;
+  box-shadow: 6px 6px 6px rgb(196, 194, 194);
   
+}
+.experienceChild21:hover{
+  transform: scale(1.09);
+  box-shadow: 7px 7px 3px grey;
+  border: 1px solid white;
+  transition: 0.7s;
+  z-index: 2;
 }
 .experienceChild3{
   /*outline: 1px solid red;*/
@@ -894,15 +914,22 @@ background-image: url('./images/aboutme.gif');
 .experienceChild31{
   position: absolute;
   width:70%;
-  height:93%;
+  height:90%;
   /*outline: 1px solid red;*/
   left:7%;
-  top:3%;
-  background-image: url('./images/exp.jpg');
-  background-size: contain;
-  background-repeat: repeat;
+  top:7%;
+  background-color: black;
+  box-shadow: 6px 6px 6px rgb(196, 194, 194);
   
   
+  
+}
+.experienceChild31:hover{
+  transform: scale(1.09);
+  box-shadow: 7px 7px 3px grey;
+  border: 1px solid white;
+  transition: 0.7s;
+  z-index: 2;
 }
 .experienceName{
  
@@ -938,7 +965,7 @@ background-image: url('./images/aboutme.gif');
 }
 
 .training{
-  height: 92vh;
+  height: 125vh;
   width:98.5vw;
   
   display: flex;
@@ -951,13 +978,14 @@ background-image: url('./images/aboutme.gif');
   position: relative;
   /*outline: 1px solid red;*/
   height:20%;
+  margin-top: 1%;
 
 }
 .trainingAlignment{
   position: absolute;
-  height:96%;
+  height:90%;
   width:60%;
-  top:2%;
+  top:5%;
   bottom: 2%;
   /*outline: 1px solid red;*/
  
@@ -966,6 +994,15 @@ background-image: url('./images/aboutme.gif');
 }
 .trainingChild11{
   left:5%;
+  box-shadow: 3px 3px 3px 3px  rgb(187, 184, 184);
+}
+.trainingChild11:hover{
+  transform: scale(1.12);
+  box-shadow: 7px 7px 3px grey;
+  transition: 0.7s;
+  z-index: 2;
+  border: 1px solid rgb(245, 238, 238);
+  
 }
 .trainingChild2{
   position: relative;
@@ -973,8 +1010,17 @@ background-image: url('./images/aboutme.gif');
   height:20%;
 
 }
+.trainingChild21:hover{
+  transform: scale(1.12);
+  box-shadow: 7px 7px 3px grey;
+  transition: 0.7s;
+  z-index: 2;
+  border: 1px solid rgb(252, 248, 248);
+  
+}
 .trainingChild21{
   left:20%;
+  box-shadow: 3px 3px 3px 3px  rgb(187, 184, 184);
 }
 .trainingChild3{
   position: relative;
@@ -984,6 +1030,15 @@ background-image: url('./images/aboutme.gif');
 }
 .trainingChild31{
   left:35%;
+  box-shadow: 3px 3px 3px 3px  rgb(187, 184, 184);
+}
+.trainingChild31:hover{
+  transform: scale(1.12);
+  box-shadow: 7px 7px 3px grey;
+  transition: 0.7s;
+  z-index: 2;
+  border: 1px solid rgb(241, 239, 239);
+  
 }
 .trainingChild4{
   position: relative;
@@ -993,6 +1048,15 @@ background-image: url('./images/aboutme.gif');
 }
 .trainingChild41{
   left:15%;
+  box-shadow: 3px 3px 3px 3px  rgb(187, 184, 184);
+}
+.trainingChild41:hover{
+  transform: scale(1.12);
+  box-shadow: 7px 7px 3px grey;
+  transition: 0.7s;
+  z-index: 2;
+  border: 1px solid rgb(241, 231, 231);
+  
 }
 .trainingChild5{
   position: relative;
@@ -1002,6 +1066,16 @@ background-image: url('./images/aboutme.gif');
 }
 .trainingChild51{
   left:5%;
+  box-shadow: 3px 3px 3px 3px  rgb(187, 184, 184);
+  margin-bottom: 5%;
+}
+.trainingChild51:hover{
+  transform: scale(1.12);
+  box-shadow: 7px 7px 3px grey;
+  transition: 0.7s;
+  z-index: 2;
+  border: 1px solid rgb(243, 239, 239);
+  
 }
 .trainingName{
   text-align: center;
@@ -1030,7 +1104,17 @@ background-image: url('./images/aboutme.gif');
 }
 /*Experience*/
 
-
+/*footer*/
+.footer{
+  background-color: black;
+  color:white;
+  font-family: 'Orbitron';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding:15px;
+  letter-spacing: 1px;
+}
   
 
 
