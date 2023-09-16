@@ -1213,29 +1213,29 @@ background-image: url('./images/aboutme.gif');
         /*outline: 1px solid red;*/
     }
     .projectChild11{
-        width:100%;
-        left:0;
+        width:90%;
+        left:4%;
     }
     .projectChild21{
-        width:100%;
-        left:0;
+        width:90%;
+        left:4%;
     }
     .projectChild31{
-        width:100%;
-        left:0;
+        width:90%;
+        left:4%;
     }
     .projectChild41{
-        width:100%;
-        left:0;
+        width:90%;
+        left:4%;
     }
 
     .projectChild51{
-        width:100%;
-        left:0;
+        width:90%;
+        left:4%;
     }
     .projectChild61{
-        width:100%;
-        left:0;
+        width:90%;
+        left:4%;
     }
     .projectIconName{
         width:55%;
@@ -1375,6 +1375,27 @@ background-image: url('./images/aboutme.gif');
       
       
       }
+      .experienceChild11:hover{
+        transform: scale(1.03);
+        box-shadow: 7px 7px 3px grey;
+        border: 1px solid white;
+        transition: 0.7s;
+        z-index: 2;
+      }
+      .experienceChild21:hover{
+        transform: scale(1.03);
+        box-shadow: 7px 7px 3px grey;
+        border: 1px solid white;
+        transition: 0.7s;
+        z-index: 2;
+      }
+      .experienceChild31:hover{
+        transform: scale(1.03);
+        box-shadow: 7px 7px 3px grey;
+        border: 1px solid white;
+        transition: 0.7s;
+        z-index: 2;
+      }
       .makeBold{
         font-size: 0.8rem;
         font-weight: 150;
@@ -1414,5 +1435,56 @@ background-image: url('./images/aboutme.gif');
         
         
       }
+      .trainingChild51:hover{
+        transform: scale(1.04);
+        box-shadow: 7px 7px 3px grey;
+        transition: 0.7s;
+        z-index: 2;
+        border: 1px solid rgb(243, 239, 239);
+        
+      }
+      .trainingChild41:hover{
+        transform: scale(1.04);
+        box-shadow: 7px 7px 3px grey;
+        transition: 0.7s;
+        z-index: 2;
+        border: 1px solid rgb(243, 239, 239);
+        
+      }
+      .trainingChild31:hover{
+        transform: scale(1.04);
+        box-shadow: 7px 7px 3px grey;
+        transition: 0.7s;
+        z-index: 2;
+        border: 1px solid rgb(243, 239, 239);
+        
+      }
+      .trainingChild21:hover{
+        transform: scale(1.04);
+        box-shadow: 7px 7px 3px grey;
+        transition: 0.7s;
+        z-index: 2;
+        border: 1px solid rgb(243, 239, 239);
+        
+      }
+      .trainingChild11:hover{
+        transform: scale(1.04);
+        box-shadow: 7px 7px 3px grey;
+        transition: 0.7s;
+        z-index: 2;
+        border: 1px solid rgb(243, 239, 239);
+        
+      }
+      .footer{
+        background-color: black;
+        color:white;
+        font-family: 'Orbitron';
+        font-size: 11px;
+        font-weight: 400;
+        text-align: center;
+        padding:8px;
+        letter-spacing: 1px;
+      }
+        
       
   }
